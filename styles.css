@@ -26,11 +26,7 @@ header {
 
 header .logo {
     display: flex;
-}
-
-header .logo img {
-    height: 75px;
-    width: 100px;
+    height: 55px;
 }
 
 nav ul {
@@ -149,6 +145,10 @@ footer {
 
 #start h2{
     margin-top: 70px;
+}
+
+#projects{
+    background-color: rgb(233, 238, 239);
 }
 
 
