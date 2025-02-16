@@ -50,9 +50,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000;
     text-decoration: none;
     font-weight: bold;
+    color: #000; 
 }
 
 nav ul li a:hover{
@@ -91,6 +91,7 @@ header button a{
     height: 3px;
     background-color: #000;
     margin: 5px;
+    margin-left: 130px;
     transition: all 0.3s ease;
 }
 
@@ -115,8 +116,8 @@ h1 {
 }
 
 #start h1{
-    font-size: 50px;
     color: #000;
+    font-size: 50px;
 }
 
 #start h2{
@@ -188,7 +189,7 @@ h1 {
 #experience h2,h2 a,
 #projects h2,h2 a,
 #certifications h2,h2 a{
-    color: #00415c;
+    color: #009bdf;
     text-decoration: none;
 }
 
@@ -277,6 +278,27 @@ footer {
     padding-top: 20px;
     color: #009bdf;;
 }
+
+.dark-mode {
+    background: black !important;
+    color: white !important;
+}
+
+#right-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-nav img{
+    padding-left: 10px;
+}
+
+.burger-color div{
+    background-color: white;
+}
+
+
 
 /* Responsive Styles */
 @media (max-width:1024px){
@@ -488,3 +510,7 @@ footer {
         width: 90%;
     }
 }
+
+
+
+
