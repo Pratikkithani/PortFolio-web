@@ -161,6 +161,7 @@ h1 {
     transition: 0.2s ease-in;
 }
 
+#education,
 #about,
 #projects,
 #certifications,
@@ -196,6 +197,7 @@ h1 {
 }
 
 #about h1,
+#education h1,
 #experience h1,
 #projects h1,
 #tech h1,
@@ -204,6 +206,7 @@ h1 {
     font-size: 32px;
 }
 
+#education h2,
 #experience h2,h2 a,
 #projects h2,h2 a,
 #certifications h2,h2 a{

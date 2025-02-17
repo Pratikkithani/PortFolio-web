@@ -21,6 +21,7 @@ const button = document.getElementById("darkmode");
 button.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     document.getElementById('about').classList.toggle("dark-mode");
+    document.getElementById('education').classList.toggle("dark-mode");
     document.getElementById('projects').classList.toggle("dark-mode");
     document.getElementById('certifications').classList.toggle("dark-mode");
     document.getElementById('logos').classList.toggle("dark-mode");
@@ -38,7 +39,6 @@ button.addEventListener("click", () => {
         button.src = "images/night-mode.png";
         document.body.classList.add("light-mode");
     }
-
     burger.classList.toggle('burger-color');
 });
 
