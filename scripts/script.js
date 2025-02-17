@@ -33,11 +33,50 @@ button.addEventListener("click", () => {
 
     if (document.body.classList.contains("dark-mode")) {
         button.src = "images/day-mode.png";
+        document.body.classList.remove("light-mode");
     } else {
         button.src = "images/night-mode.png";
+        document.body.classList.add("light-mode");
     }
 
     burger.classList.toggle('burger-color');
-            
-});        
+});
+
+
+
+const gallery = [
+    {
+        imgsrc: "images/certifications/java.png",
+        altext: "java"
+    },
+    {
+        imgsrc: "images/certifications/python.png",
+        altext: "python"
+    },
+    {
+        imgsrc: "images/certifications/ai.png",
+        altext: "ai"
+    },
+    {
+        imgsrc: "images/certifications/sql.jpg",
+        altext: "sql"
+    }
+];
+
+const prev_gal_btn = document.getElementById('prev-gallery-btn');
+const next_gal_btn = document.getElementById('next-gallery-btn');
+const gal_imgs = document.getElementById('gallery-img');
+let i = 0;
+
+next_gal_btn.addEventListener("click", () => {
+    i = (i + 1) % gallery.length;
+    gal_imgs.src = gallery[i].imgsrc;
+    gal_imgs.alt = gallery[i].altext;
+});
+
+prev_gal_btn.addEventListener("click", () => {
+    i = (i - 1 + gallery.length) % gallery.length;
+    gal_imgs.src = gallery[i].imgsrc;
+    gal_imgs.alt = gallery[i].altext;
+});
 
