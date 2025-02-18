@@ -21,11 +21,10 @@ const button = document.getElementById("darkmode");
 button.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     document.getElementById('about').classList.toggle("dark-mode");
-    document.getElementById('education').classList.toggle("dark-mode");
-    document.getElementById('projects').classList.toggle("dark-mode");
-    document.getElementById('certifications').classList.toggle("dark-mode");
+    document.getElementById('experience').classList.toggle("dark-mode");
+    document.getElementById('tech').classList.toggle("dark-mode");
+    document.getElementById('contact').classList.toggle("dark-mode");
     document.getElementById('logos').classList.toggle("dark-mode");
-    document.getElementById('footer').classList.toggle("dark-mode");
     document.getElementById('header').classList.toggle("dark-mode");
     navLinksa.forEach(link=>{
         link.classList.toggle("dark-mode");
@@ -79,4 +78,3 @@ prev_gal_btn.addEventListener("click", () => {
     gal_imgs.src = gallery[i].imgsrc;
     gal_imgs.alt = gallery[i].altext;
 });
-
