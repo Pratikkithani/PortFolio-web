@@ -223,8 +223,12 @@ h1 {
     font-size: 32px;
 }
 
+#projects h2{
+    color: #fff;
+}
+
 #experience h2,h2 a,
-#projects h2,h2 a,
+h2 a,
 #certifications h2,h2 a{
     color: #2757da;
     text-decoration: none;
@@ -232,7 +236,8 @@ h1 {
 
 #projects_div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center;align-items: center;
     flex-wrap: wrap;
 }
 
@@ -311,7 +316,7 @@ h1 {
 
 footer{
     padding: 12px;
-
+    margin-top: 70px;
 }
 
 #logos{
@@ -379,6 +384,33 @@ form input, form textarea {
 #languages img:hover{
     transition: 1s;
     scale: 1.5;
+}
+
+footer h4 a{
+    text-decoration: none;
+}
+
+#email-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border-radius: 50px;
+}
+
+.email-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-contact img{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.email-contact h4 a{
+    text-decoration: none;
 }
 
 .langs-div{
@@ -655,5 +687,24 @@ form input, form textarea {
     #profile-back{
         height:300px;
         width: 300px;
+    }
+
+    .proj_div{
+        height: 550px;
+    }
+
+    #email-cont{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 40px;
+    }
+
+    .email-contact h4 a{
+        font-size: 12px;
+    }
+
+    .email-contact img{
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }

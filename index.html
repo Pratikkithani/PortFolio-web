@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratik's Portfolio</title>
+    <title>Pratik's Blog</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,32 +101,15 @@
         <h1>Projects</h1>
         <div id="projects_div">
             <div class="proj_div">
-                <h2><a href="https://github.com/Pratikkithani/SMS-Spam-Filtering">SMS Spam Filtering</a></h2>
+                <h2 id="proj_div_h2">SMS Spam Filtering</h2>
                 <h5>(January 2023)</h5>
                 <p>Developed a mixture of Web Development skills and Machine Learning algorithm to differentiate and Spam and Ham messages. It is a website which acts as a simple database for the users to know whether the message is spam or not.</p>
                 <p>Tools & technologies used: HTML, BOOTSTRAP, Flask, Python, Twilio</p>
                 <button class="proj_btns"><a href="https://github.com/Pratikkithani/SMS-Spam-Filtering">Source Code</a></button>
             </div>
-            <div class="proj_div">
-                <h2><a href="https://github.com/Pratikkithani/ATM-SIMULATOR">ATM-Simulator</a></h2>
-                <h5>(December 2021)</h5>
-                <p>Developed an application that simulates an ATM. Utilized Swing framework to develop its graphical user interface (GUI). Implemented database connectivity using JDBC and managed the database system with MySQL.</p>
-                <p>Tools & technologies used: Java, Swing, JDBC, MYSQL</p>
-                <button class="proj_btns"><a href="https://github.com/Pratikkithani/ATM-SIMULATOR">Source Code</a></button>
-            </div>
-            <div class="proj_div">
-                <h2><a href="https://github.com/Pratikkithani/Blood-Donation-App">Blood Donation</a></h2>
-                <h5>(July 2020)</h5>
-                <p>The Blood Donation App is an Android application developed using Android Studio, Java, and Firebase for database management. This app serves as a platform for both donors and recipients, facilitating the process of blood donation and matching donors with those in need.</p>
-                <p>Tools & technologies used: Java, Android Studio, Firebase</p>
-                <button class="proj_btns"><a href="https://github.com/Pratikkithani/Blood-Donation-App">Source Code</a></button>
-            </div>
-            <div class="proj_div">
-                <h2><a href="https://github.com/Pratikkithani/College-Space">College Space</a></h2>
-                <h5>(February 2022)</h5>
-                <p>A central site to keep track of all committee activities. The website includes a free newsletter that keeps everyone up to date on forthcoming events held by the college’s committees.</p>
-                <p> Tools & technologies used: HTML, CSS, BOOTSTRAP, JavaScript</p>
-                <button class="proj_btns"><a href="https://github.com/Pratikkithani/College-Space">Source Code</a></button>
+            <div id="arrows">
+                <img id="prev-proj-btn" src="images/left-arrow.png" height="40px" width="40px"> 
+                <img id="next-proj-btn" src="images/right-arrow.png" height="40px" width="40px">
             </div>
         </div>
     </section>
@@ -185,8 +168,8 @@
             <input type="email" id="email" name="email" required placeholder="Enter your E-mail">
             <label for="message">Message:</label>
             <textarea id="message" name="message" required placeholder="Enter what you want to convey" rows="15"></textarea>
+            <center><button type="submit">Send</button></center>
         </form>
-        <center><button type="submit">Send</button></center>
         <div id="email-cont">
             <div class="email-contact">
                 <img src="images/gmail.png" alt="" height="30px" width="30px">
@@ -211,10 +194,3 @@
     <script src="scripts/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-  
